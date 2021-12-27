@@ -1,0 +1,23 @@
+Sub Column_Split()
+'
+' Split one column into many new ones (500 lines max) 
+'
+
+    Dim vDB, rngDB As Range
+    Dim vHead
+    Dim rngT As Range, i As Long
+
+    Set rngDB = Range("A1").CurrentRegion
+    vHead = Range("A1").Resize(1, 1)
+    For i = 500 To rngDB.Rows.Count Step 499
+        vDB = rngDB.Range("A" & i).Resize(499, 1)
+        Set rngT = Cells(1, Columns.Count).End(xlToLeft).Offset(, 1)
+        rngT.Resize(1, 1) = vHead
+        rngT.Offset(1, 0).Resize(499, 1) = vDB
+    Next i
+    rngDB.Offset(500).Clear
+    Set rngDB = Range("A1").CurrentRegion
+    'rngDB.Borders.LineStyle = xlContinuous
+
+'
+End Sub
