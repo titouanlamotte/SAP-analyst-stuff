@@ -1,0 +1,6 @@
+
+#Keepass url strings for SAP with sapshcut
+
+cmd://sapshcut -system=DEV -language=DE -client=010 -user={USERNAME} -pw={PASSWORD} -max
+
+cmd://sapshcut -desc="SAP Mandant Logon Desc instead of system" -language=DE -client=010 -user={USERNAME} -pw={PASSWORD} -max 
