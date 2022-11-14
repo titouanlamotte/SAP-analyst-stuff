@@ -1,0 +1,23 @@
+# SAP VBS Scripting
+
+
+## Introduction to SAP Gui Scripting
+
+REMEMBER: ENABLING SCRIPTING IN PRODUCTION SYSTEMS IS GENERALLY A BAD IDEA.
+
+https://blogs.sap.com/2012/10/08/introduction-to-sap-gui-scripting/
+
+    Start transaction RZ11
+    On the Maintain Profile Parameters screen, enter “sapgui/user_scripting.”
+    Choose Display.
+    In the Display Profile Parameter Attributes screen, choose Change value.
+    Enter “TRUE” in the new value field.
+    Click the Save Button.
+
+
+
+
+## Script Recording & Playback for Dummies
+by Mariano Cabalen
+
+https://blogs.sap.com/2014/08/04/script-recording-playback-for-dummies/
