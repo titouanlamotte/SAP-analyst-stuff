@@ -1,0 +1,31 @@
+### WSL
+
+
+## Setup Config
+
+- sudo apt install -y kali-win-kex
+-	kex --win -s		#start
+-	kex --esm --ip -s	#start full
+-	kex --sl -s		#start seamless
+
+-	sudo apt install -y kali-linux-large
+-   sudo apt install -y kali-linux-default
+-   kali-tweaks
+
+## Network Config
+-   /etc/resolv.cong
+-   /etc/wsl.conf
+
+``` 
+[network]
+generateResolvConf = false
+
+
+[boot]
+command = "printf 'nameserver 8.8.8.8\nnameserver 4.4.4.4' > /etc/resolv.conf"
+``` 
+
+## Useful stuff
+
+- traceroute 8.8.8.8 : trace till the given IP address
+- 
